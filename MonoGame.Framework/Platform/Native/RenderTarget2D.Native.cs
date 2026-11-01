@@ -75,4 +75,9 @@ public partial class RenderTarget2D
 
         return renderTarget;
     }
+
+    /// <summary>
+    /// Gets the native texture wrapper handle.
+    /// </summary>
+    public unsafe nint NativeHandle => (nint)Handle;
 }

@@ -72,6 +72,11 @@ namespace Microsoft.Xna.Framework.Graphics
             base.Dispose(disposing);
         }
 
+        /// <summary>
+        /// Gets the native OpenGL texture handle.
+        /// </summary>
+        public nint NativeHandle => glTexture;
+
         private static RenderTarget2D PlatformFromNativeHandle(
             GraphicsDevice graphicsDevice,
             nint handle,

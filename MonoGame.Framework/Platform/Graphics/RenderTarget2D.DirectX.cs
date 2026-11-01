@@ -193,6 +193,11 @@ namespace Microsoft.Xna.Framework.Graphics
             return desc;
         }
 
+        /// <summary>
+        /// Gets the native Direct3D texture handle.
+        /// </summary>
+        public nint NativeHandle => GetTexture().NativePointer;
+
         private static RenderTarget2D PlatformFromNativeHandle(
             GraphicsDevice graphicsDevice,
             nint handle,
