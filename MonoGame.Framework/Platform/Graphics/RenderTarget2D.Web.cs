@@ -55,5 +55,10 @@ namespace Microsoft.Xna.Framework.Graphics
         {
             throw new PlatformNotSupportedException();
         }
+
+        /// <summary>
+        /// Gets the native graphics handle.
+        /// </summary>
+        public nint NativeHandle => throw new PlatformNotSupportedException();
     }
 }
